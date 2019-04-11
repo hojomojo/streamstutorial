@@ -3,7 +3,7 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public class StreamsChallengeAnswers extends StreamsTutorial {
+class StreamsChallengeAnswers extends StreamsTutorial {
 
     @Override
     List<String> filterByStartingWithA() {

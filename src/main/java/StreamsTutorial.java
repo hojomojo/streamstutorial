@@ -7,7 +7,7 @@ public abstract class StreamsTutorial {
 
     private List<String> stringCollection;
 
-    public StreamsTutorial() {
+    StreamsTutorial() {
         stringCollection = List.of("ddd2", "aaa2", "bbb1", "aaa1", "bbb3", "ccc", "bbb2", "ddd1");
     }
 
