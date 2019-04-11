@@ -24,6 +24,8 @@ abstract class StreamsTutorial {
         personList = List.of(new Person("Bob", 1000), new Person("Sally", 2000), new Person("Eve", 1050));
     }
 
+    // =============== String challenges =============== //
+    
     abstract List<String> filterByStartingWithA();
 
     abstract List<String> filterByStartingWithASorted();
@@ -31,6 +33,8 @@ abstract class StreamsTutorial {
     abstract List<String> changeToUpperCaseAndReverseOrder();
 
     abstract String concatenateToSingleHashDelimitedString();
+
+    // =============== Person challenges =============== //
 
     abstract Map<String, Integer> mapOfNamesToSalary();
 

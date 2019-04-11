@@ -16,7 +16,8 @@ class StreamsChallenge extends StreamsTutorial {
     }
 
     @Override
-    List<String> changeToUpperCaseAndReverseOrder() { return null;
+    List<String> changeToUpperCaseAndReverseOrder() {
+        return null;
     }
 
     @Override
