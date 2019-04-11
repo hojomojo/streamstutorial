@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 @Data
-public abstract class StreamsTutorial {
+abstract class StreamsTutorial {
 
     @Data
     class Person {
