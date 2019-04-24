@@ -36,6 +36,11 @@ class StreamsChallenge extends StreamsTutorial {
     }
 
     @Override
+    long peopleWithThreeLetterNames() {
+        return 0;
+    }
+
+    @Override
     void giveEveryoneAThousandPoundPayrise() {
     }
 

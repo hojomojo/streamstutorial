@@ -40,6 +40,8 @@ abstract class StreamsTutorial {
 
     abstract int totalSalaryCost();
 
+    abstract long peopleWithThreeLetterNames();
+
     abstract void giveEveryoneAThousandPoundPayrise();
 
     // =============== Additional challenges =============== //

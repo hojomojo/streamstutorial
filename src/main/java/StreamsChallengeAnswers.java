@@ -59,6 +59,11 @@ class StreamsChallengeAnswers extends StreamsTutorial {
     }
 
     @Override
+    long peopleWithThreeLetterNames() {
+        return this.getPersonList().stream().filter(person -> person.getName().length() == 3).count();
+    }
+
+    @Override
     void giveEveryoneAThousandPoundPayrise() {
         this.getPersonList().forEach(person -> person.setSalary(person.getSalary() + 1000));
     }

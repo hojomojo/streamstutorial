@@ -37,7 +37,12 @@ public class StreamsTutorialTest {
 
     @Test
     public void mapOfNamesToSalary() {
-        assertEquals(streamsTutorial.mapOfNamesToSalary(), Map.of("Bob", 1000,"Sally", 2000,"Eve", 1050));
+        assertEquals( Map.of("Bob", 1000,"Sally", 2000,"Eve", 1050), streamsTutorial.mapOfNamesToSalary());
+    }
+
+    @Test
+    public void peopleWithThreeLetterNames() {
+        assertEquals(2, streamsTutorial.peopleWithThreeLetterNames());
     }
 
     @Test
