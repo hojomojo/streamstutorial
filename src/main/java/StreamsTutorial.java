@@ -42,4 +42,10 @@ abstract class StreamsTutorial {
 
     abstract void giveEveryoneAThousandPoundPayrise();
 
+    // =============== Additional challenges =============== //
+
+    abstract List<String> splitStringToCollection(String inputString, String separator);
+
+
+
 }

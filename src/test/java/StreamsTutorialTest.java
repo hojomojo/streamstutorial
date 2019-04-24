@@ -2,6 +2,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.Matchers.contains;
@@ -12,7 +13,7 @@ import static org.junit.Assert.assertThat;
 @RunWith(JUnit4.class)
 public class StreamsTutorialTest {
 
-    private StreamsTutorial streamsTutorial = new StreamsChallenge();
+    private StreamsTutorial streamsTutorial = new StreamsChallengeAnswers();
 
     @Test
     public void filterByStartingWithA() {
@@ -48,5 +49,10 @@ public class StreamsTutorialTest {
     public void giveEveryoneAThousandPoundPayrise() {
         streamsTutorial.giveEveryoneAThousandPoundPayrise();
         assertEquals(streamsTutorial.mapOfNamesToSalary(), Map.of("Bob", 2000,"Sally", 3000,"Eve", 2050));
+    }
+
+    @Test
+    public void splitStringToCollection() {
+        assertEquals(List.of("a","b","c","d","e","f"), (streamsTutorial.splitStringToCollection("a,b,c,d,e,f", ",")));
     }
 }

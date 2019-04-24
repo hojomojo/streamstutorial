@@ -1,6 +1,7 @@
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
@@ -11,7 +12,7 @@ class StreamsChallengeAnswers extends StreamsTutorial {
     List<String> filterByStartingWithA() {
         return this.getStringList()
                 .stream()
-                .filter((s) -> s.startsWith("a"))
+                .filter(s -> s.startsWith("a"))
                 .collect(toList());
     }
 
@@ -20,7 +21,7 @@ class StreamsChallengeAnswers extends StreamsTutorial {
         return this.getStringList()
                 .stream()
                 .sorted()
-                .filter((s) -> s.startsWith("a"))
+                .filter(s -> s.startsWith("a"))
                 .collect(toList());
     }
 
@@ -60,5 +61,12 @@ class StreamsChallengeAnswers extends StreamsTutorial {
     @Override
     void giveEveryoneAThousandPoundPayrise() {
         this.getPersonList().forEach(person -> person.setSalary(person.getSalary() + 1000));
+    }
+
+    @Override
+    List<String> splitStringToCollection(String inputString, String separator) {
+        return Pattern.compile(separator)
+                .splitAsStream(inputString)
+                .collect(toList());
     }
 }

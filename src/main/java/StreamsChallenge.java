@@ -38,4 +38,9 @@ class StreamsChallenge extends StreamsTutorial {
     @Override
     void giveEveryoneAThousandPoundPayrise() {
     }
+
+    @Override
+    List<String> splitStringToCollection(String inputString, String separator) {
+        return List.of();
+    }
 }
