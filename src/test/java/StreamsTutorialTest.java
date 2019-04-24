@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
 @RunWith(JUnit4.class)
 public class StreamsTutorialTest {
 
-    private StreamsTutorial streamsTutorial = new StreamsChallengeAnswers();
+    private StreamsTutorial streamsTutorial = new StreamsChallenge();
 
     @Test
     public void filterByStartingWithA() {
